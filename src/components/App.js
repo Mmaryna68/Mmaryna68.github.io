@@ -1,8 +1,8 @@
 import "../style/App.css";
-import Header from "./Header";
+import Header from "./Header/Header";
 import Main from "./Main";
-import Footer from "./Footer";
-import ThemeSwitcher from "./ThemeSwitcher";
+import Footer from "./Footer/Footer";
+import ThemeSwitcher from "./Theme/ThemeSwitcher";
 
 function App() {
   return (

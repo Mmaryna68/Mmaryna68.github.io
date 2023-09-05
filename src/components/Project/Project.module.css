@@ -1,0 +1,72 @@
+/* Project.module.css */
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  color: #f0f0f0;
+  background-color: #6b7280;
+  box-shadow: 0px 0px 10px #6b7280;
+  border-radius: 10px;
+  gap: 50px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  background-color: #ffccea;
+  color: #6b7280;
+  box-shadow: 0px 0px 15px #ffccea;
+}
+
+.projectImage {
+  width: 550px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: filter 0.3s ease;
+}
+
+.project:hover img {
+  filter: brightness(1.2);
+}
+
+.projectDetails {
+  flex: 1;
+}
+
+.projectTitle {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.projectDescription {
+  font-size: 16px;
+  margin: 0;
+}
+
+.projectLinks {
+  margin-top: 10px;
+}
+
+.projectLinks a {
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.projectLinks a:hover {
+  background-color: #181b57;
+  color: #fff;
+}
+
+.projectLinks span {
+  margin: 0 5px;
+  color: #6b7280;
+}

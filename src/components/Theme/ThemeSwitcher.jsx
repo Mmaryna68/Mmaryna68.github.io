@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "../style/App.css";
-import lightStyles from "../style/LightTheme.module.css";
-import darkStyles from "../style/DarkTheme.module.css";
+//import "../style/App.css";
+import lightStyles from "./LightTheme.module.css";
+import darkStyles from "./DarkTheme.module.css";
 
 const ThemeSwitcher = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);

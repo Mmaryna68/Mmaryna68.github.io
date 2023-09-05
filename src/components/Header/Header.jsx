@@ -1,7 +1,14 @@
+// Header.jsx
+import logo from "../../images/logo.png";
+import styles from "./Header.module.css";
+
 const Header = () => {
   return (
-    <header className="header">
-      <nav>
+    <header className={styles.header}>
+      <div className={styles.logo}>
+        <img src={logo} alt="Logo" />
+      </div>
+      <nav className={styles.nav}>
         <ul>
           <li>
             <a href="#about">About me</a>
@@ -17,7 +24,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className="language-switch">
+      <div className={styles.languageSwitch}>
         <a href="/">
           <span>EN</span>
         </a>

@@ -1,0 +1,134 @@
+/* Header.module.css */
+.header {
+  background-color: rgba(240, 160, 245, 0.96);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  margin-right: 10px;
+  width: 275px;
+  height: 85px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif Arial,
+    Helvetica, sans-serif;
+  font-size: 24px;
+  position: relative;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s ease; /* Анимация изменения цвета текста */
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Высота полоски под текстом */
+  transform: scaleX(0); /* Начальное состояние - полоска невидима */
+  transform-origin: right;
+  transition: transform 0.3s ease; /* Анимация изменения ширины при наведении */
+}
+
+.nav a:hover {
+  color: #6b7280; /* Серый цвет текста при наведении */
+}
+
+.nav a:hover::before {
+  transform: scaleX(1); /* Полоска становится видимой при наведении */
+  transform-origin: left;
+}
+
+.languageSwitch {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.languageSwitch a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.languageSwitch a:hover {
+  color: #6b7280;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 10%;
+  bottom: 0;
+  left: 0;
+  color: aliceblue;
+  background: #181b57; /* Цвет фона */
+  border-radius: 50% 50% 0 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav a:hover::before {
+  width: 100%; /* Ширина фона при наведении */
+}
+
+/* Мedia-query for tablets */
+@media screen and (max-width: 768px) {
+  .logo img {
+    margin-right: 8px;
+    width: 175px;
+    height: 45px;
+  }
+
+  .nav {
+    padding: 8px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+}
+
+/* Мedia-query for mobile devices */
+@media screen and (max-width: 480px) {
+  .logo img {
+    display: none;
+  }
+  .nav li {
+    margin-right: 10px;
+  }
+  .languageSwitch {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+/* ProjectWork.module.css */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.projectsTitle {
+  font-size: 35px;
+  color: #6b7280;
+  margin-left: 20px;
+}

@@ -1,0 +1,32 @@
+/* Footer.module.css */
+.footer {
+  background-color: #ffccea;
+  color: #6b7280;
+  padding: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__socialItem {
+  font-size: 30px;
+  color: #6b7280;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.footer__socialItem:hover {
+  color: #181b57;
+  font-size: 36px;
+}

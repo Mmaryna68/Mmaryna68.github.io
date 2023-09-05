@@ -1,6 +1,6 @@
-import About from "./About";
-import ProjectWork from "./ProjectWork";
-import PetProjects from "./PetProjects";
+import About from "./About/About";
+import ProjectWork from "./ProjectWork/ProjectWork";
+import PetProjects from "./PetProjects/PetProjects";
 
 const Main = () => {
   return (

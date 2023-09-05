@@ -1,0 +1,26 @@
+.contact {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.3s, font-size 0.3s;
+  margin-left: 20px;
+}
+
+.contact:hover {
+  color: #181b57;
+  font-size: 28px;
+}
+
+.socialItem {
+  font-size: 24px;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.socialItem:hover {
+  color: #181b57;
+  font-size: 28px;
+}
